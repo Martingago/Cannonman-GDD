@@ -19,8 +19,6 @@ Versión del documento: 1.0
 
 ### Puntos Clave
 
-> *En forma de lista, explica las características principales del juego, de forma que permita entender la experiencia de juego. Enfatiza los elementos más importantes, divertidos y/o innovadores. Procura que haya un mínimo de 5 puntos clave*
-
 Los puntos clave que hacen que Cannonman sea un juego adictivo que incentive al jugador a continuar jugando son:
 
 1. **Sencillez de los controles:** Los controles simples permiten que jugadores de todos los niveles de habilidad puedan disfrutar del juego, desde aquellos experimentados hasta los más casuales que buscan pasar un rato divertido.
@@ -39,7 +37,7 @@ Los puntos clave que hacen que Cannonman sea un juego adictivo que incentive al 
 
 ### Género
 
-> `Aventura`, `Arcade`, `Gestión de recursos`, `Clicker`, `Endless-runner`, `Incremental-games`
+`Aventura`, `Arcade`, `Gestión de recursos`, `Clicker`, `Endless-runner`, `Incremental-games`.
 
 ### Público Objetivo
 
@@ -101,13 +99,34 @@ En Cannonman: Endless-Run, las mecánicas del juego se basan en la acción de la
 
 **Lanzamiento desde el cañón:**
 - Regla: Al iniciar cada partida, el jugador lanza a Cannonman desde un cañón con velocidad inicial indeterminada.
-- Funcionamiento: Para determinar la velocidad a la que sale despedido el jugador, éste deberá realizar una prueba de habilidad en el que deberá pulsar la tecla espaciadora en el momento de mayor potencia del cañon. La forma en la que se calcula la velocidad máxima con la que podrá salir despedido el jugador es gracias al atributo de `Velocidad` del jugador y al nivel que éste tenga. 
-El cálculo de la velocidad máxima proviene de la siguiente función matemática: `Base + Mathf.Pow(1.07f, Level) + (0.5f * Level)` Dónde:
-    - La velocidad base (`Base`) es un valor constante.
-    - La velocidad máxima se determina mediante una suma exponencial que depende del nivel del atributo de velocidad de Cannonman (`Level`). Esta suma exponencial se obtiene elevando el valor 1.07 a la potencia del nivel del atributo velocidad.
+- Funcionamiento: Para determinar la velocidad a la que sale despedido el jugador, éste deberá realizar una prueba de habilidad en el que deberá pulsar la tecla **barra espaciadora** en el momento de mayor potencia del cañon. La forma en la que se calcula la velocidad máxima con la que podrá salir despedido el jugador es gracias al atributo de `Velocidad` del jugador y al nivel que éste tenga.
+
+El cálculo de la velocidad máxima proviene de la siguiente función matemática: 
+>`Base + Mathf.Pow(1.07f, Level) + (0.5f * Level)`
+- Función matemática:
+    - La velocidad base (`Base`) es un valor constante. Para el atributo de **velocidad** su valor es de: `32f`.
+    - La `velocidad máxima cañon` se determina mediante una suma exponencial que depende del nivel del atributo de velocidad de Cannonman (`Level`). Esta suma exponencial se obtiene elevando el valor **1.07** a la potencia del **nivel** del atributo **velocidad**.
     - Además, se agrega un incremento lineal de 0.5 por cada nivel del atributo de velocidad.
 
-El resultado de esta operación matemática proporciona la velocidad máxima a la que Cannonman puede ser lanzado. La velocidad mínima se establece como el `40%` de la velocidad máxima, asegurando un rango de velocidad adecuado para el jugador.
+El resultado de esta operación matemática proporciona la **Velocidad máxima cañon** a la que Cannonman puede ser lanzado. La velocidad mínima se establece como el `40%` de la **velocidad máxima cañon**, asegurando un rango de velocidad adecuado para el jugador.
+
+**Impulso vertical/Golpeo:**
+- Regla: Siempre y cuando el jugador esté en el aire, éste podrá activar esta habilidad especial pulsando **Flecha abajo | DownArrow**; Esta habilidad impulsará al jugador verticalmente hacia abajo modificando su trayectoria y permitiendole esquivar enemigos, o alcanzar colchonetas. Esta habilidad sólo puede ser empleada una única vez en el aire y para poder volver a utilizarla es necesario tocar el suelo.
+- Funcionamiento: Siempre y cuando se cumpla la regla anterior y el jugador tenga disponible el efecto de **impulso vertical** éste podrá pulsar la **flecha abajo** y se activará este efecto una única vez (La acción del pulsar repetidmente la acción no tendrá otros efectos mientras el impulso vertical esté activo). Cuando el jugado haya impactado con el terreno, o con alguna colchoneta, este efecto se reiniciará, permitiendo al jugador volver a activar la habilidad.
+El cálculo del **impulso vertical** o **golepo** del jugador se determina a través de una fórmula matemática en la que interviene: `Base golpeo`, `Nivel golpeo`, `Velocidad jugador`, y finalmente `Velocidad máxima cañon`.
+
+El cálculo del impulso vertical proviene de la siguiente función matemática: 
+>`Base + [Mathf.Pow(1.045f, Level) * (Velocidad jugador/Velocidad máxima cañon)] + (Level * 0.2)`
+- Función matemática:
+    - El valor `Base` es un valor constante. Para el atributo de **golpeo** su valor es de: `11f`.
+    - Sobre esta base, se aplica una suma que se calcula a través de realizar dos operaciones:
+        - **Potencial**: Elevar el valor **1.045** a la potencia del **nivel** del atributo de **golepo**  `Mathf.Pow(1.045f, Level)` .
+        - **Factor**: Dividir la velocidad actual del jugador con la velocidad maxima que el cañon puede expulsar al jugador. `Velocidad jugador/Velocidad máxima cañon`
+        - **Caculo**: El valor que se le sumará a la `Base` será la suma entre el Potencial y el Factor calculados anteriormente: `Potencial + Factor`;
+    - Finalmente se agrega un incremento lineal de 0.2 por cada nivel del atributo de golpeo.
+El resultado de esta operación matemática proporciona el **impulso vertical** del jugador. Para hacer que este valor sea más estable y evitar errores, siempre que se aplica el **impulso vertical o golpeo**, la velocidad en el eje Y (Vertical) inicial se establece el 0, para evitar colapsamientos o anulaciones entre velocidades opuestas. 
+     
+  
 
 ### Flujo de Juego
 
