@@ -23,17 +23,23 @@ Versión del documento: 1.0
 
 Los puntos clave que hacen que Cannonman sea un juego adictivo que incentive al jugador a continuar jugando son:
 
->1. **Sencillez de los controles:** Los controles simples permiten que jugadores de todos los niveles de habilidad puedan disfrutar del juego, desde aquellos experimentados hasta los más casuales que buscan pasar un rato divertido.
->2. **Gestión de recursos:** A medida que el juego avanza, mejorar los atributos del jugador se vuelve cada vez más costoso, lo que obliga al jugador a tomar decisiones estratégicas sobre cómo invertir sus recursos para maximizar su progreso de manera eficiente.
->3. **Crecimiento exponencial:** El progreso del jugador y la dificultad del juego aumentan de manera exponencial, lo que proporciona una sensación de logro gratificante cuando se alcanzan nuevos récords y metas que parecían inalcanzables anteriormente.
->4. **Gameplay infinito:** Cannonman ofrece una experiencia de juego sin fin, donde el único límite es la determinación del jugador por superar sus propias marcas y alcanzar nuevas distancias.
->5. **Variedad de obstáculos:** A lo largo del recorrido, los jugadores se encontrarán con una variedad de obstáculos y enemigos que desafiarán su habilidad y destreza. Además, hay elementos que ayudarán al jugador a superar los desafíos y avanzar aún más.
->6. **Paisaje y entorno cambiantes:** Conforme el jugador avanza, el paisaje y el entorno se transforman, lo que sirve como indicador visual del progreso del jugador y añade variedad visual a la experiencia de juego.
->7. **Juego multitarea:** Un punto clave es que este juego es compatible con realizar otras tareas (escuchar música, ver la televisión, realizar tareas monotonas) puesto que no requiere del 100% de la atención del usuario para poder jugarlo debido a la naturaleza del gameplay
+1. **Sencillez de los controles:** Los controles simples permiten que jugadores de todos los niveles de habilidad puedan disfrutar del juego, desde aquellos experimentados hasta los más casuales que buscan pasar un rato divertido.
+
+2. **Gestión de recursos:** A medida que el juego avanza, mejorar los atributos del jugador se vuelve cada vez más costoso, lo que obliga al jugador a tomar decisiones estratégicas sobre cómo invertir sus recursos para maximizar su progreso de manera eficiente.
+
+3. **Crecimiento exponencial:** El progreso del jugador y la dificultad del juego aumentan de manera exponencial, lo que proporciona una sensación de logro gratificante cuando se alcanzan nuevos récords y metas que parecían inalcanzables anteriormente.
+
+4. **Gameplay infinito:** Cannonman ofrece una experiencia de juego sin fin, donde el único límite es la determinación del jugador por superar sus propias marcas y alcanzar nuevas distancias.
+
+5. **Variedad de obstáculos:** A lo largo del recorrido, los jugadores se encontrarán con una variedad de obstáculos y enemigos que desafiarán su habilidad y destreza. Además, hay elementos que ayudarán al jugador a superar los desafíos y avanzar aún más.
+
+6. **Paisaje y entorno cambiantes:** Conforme el jugador avanza, el paisaje y el entorno se transforman, lo que sirve como indicador visual del progreso del jugador y añade variedad visual a la experiencia de juego.
+
+7. **Juego multitarea:** Un punto clave es que este juego es compatible con realizar otras tareas (escuchar música, ver la televisión, realizar tareas monotonas) puesto que no requiere del 100% de la atención del usuario para poder jugarlo debido a la naturaleza del gameplay
 
 ### Género
 
-> Aventura, Arcade, Gestión de recursos, Clicker, Endless-runner, Incremental-games
+> `Aventura`, `Arcade`, `Gestión de recursos`, `Clicker`, `Endless-runner`, `Incremental-games`
 
 ### Público Objetivo
 
@@ -60,11 +66,11 @@ En resumen, el jugador experimentará una emocionante carrera infinita llena de 
 
 ### Metas de Diseño
 
->1.- Metas de ambientación:
+1. Metas de ambientación:
     - Crear paisajes variados y visualmente atractivos que cambien a medida que el jugador avanza para dar feedback de progreso al jugador.
     - Utilizar efectos de sonido envolventes para aumentar la inmersión del jugador  cada vez que realiza una acción o sudece algún evento dentro del mundo del juego.
 
->2.- Metas de jugabilidad:
+2. Metas de jugabilidad:
     - Diseñar obstáculos y enemigos desafiantes que requieran habilidad y reflejos por parte del jugador para superarlos y que obliguen al jugador a esquivarlos para evitar ser penalizado.
     - Diseñar un sistema de enemigos en base al nivel de progresión del jugador de forma que cuando más avanzado esté enemigos más peligrosos pueda encontrarse. (NO DISPONIBLE EN LA DEMO)
     - Generación aleatorio de los elementos interactivos (tanto aliados como enemigos) dentro del terreno de juego para evitar que todas las partidas sean iguales.
@@ -72,16 +78,16 @@ En resumen, el jugador experimentará una emocionante carrera infinita llena de 
     - Proporcionar elementos de ayuda (trampolines) que incentiven al jugador a atreverse a asumir el riesgo de poder ser golpeado por un enemigo a cambio de ser impulsado por un trampolín.
     - Evitar pantallas de carga y otros menús para hacer el gameplay mucho más fluido y agradable para el jugador. (De hecho el menú de gameover tengo previsto eliminarlo, únicamente lo he puesto para cumplir con los requisitos de entrega)
 
->3.- Metas de interacción:
+3. Metas de interacción:
     - Desarrollar controles simples que permitan a los jugadores disfrutar del juego sin dificultad independientemente si están familiarizados con los videojuegos o no.
     - Incorporar elementos interactivos como trampolines que proporcionen al jugador ventajas estratégicas y añadan diversidad al gameplay.
     - Botones de mejora para los atributos del jugador que le ayudarán a alcanzar nuevas metas.
 
->4.- Metas de rejugabilidad:
+4. Metas de rejugabilidad:
     - Implementar sistemas de logros y desafíos que incentiven a los jugadores a regresar y explorar nuevas formas de jugar. (NO DISPONIBLE EN LA DEMO)
     - Ofrecer actualizaciones periódicas con contenido nuevo, como niveles adicionales o eventos especiales, para mantener fresca la experiencia del juego a largo plazo. (EN CURSO)
 
-Metas de rendimiento y optimización:
+5. Metas de rendimiento y optimización:
     - Optimizar el rendimiento del juego para garantizar una experiencia fluida y sin interrupciones en una variedad de dispositivos tanto móviles como ordenadores de baja gamma. (EN CURSO)
     - Minimizar los tiempos de carga y optimizar los recursos para garantizar una experiencia de juego rápida eficiente.
 
@@ -93,13 +99,15 @@ Metas de rendimiento y optimización:
 
 En Cannonman: Endless-Run, las mecánicas del juego se basan en la acción de lanzar al personaje principal, Cannonman, desde un cañón y controlarlo a medida que avanza por un entorno infinito lleno de obstáculos y desafíos. Aquí se describen las principales mecánicas del juego y cómo interactúan entre sí:
 
-> Lanzamiento desde el cañón:
-Regla: Al iniciar cada partida, el jugador lanza a Cannonman desde un cañón con velocidad inicial indeterminada.
-Funcionamiento: Para determinar la velocidad a la que sale despedido el jugador, éste deberá realizar una prueba de habilidad en el que deberá pulsar la tecla espaciadora en el momento de mayor potencia del cañon. La forma en la que se calcula la velocidad máxima con la que podrá salir despedido el jugador es gracias al atributo de **Velocidad** del jugador y al nivel que éste tenga. El cálculo de la velocidad máxima proviene de la siguiente función matemática: **Base + Mathf.Pow(1.07f, Level) + (0.5f * Level)** Dónde:
-    - La velocidad base (**Base**) es un valor constante.
-    - La velocidad máxima se determina mediante una suma exponencial que depende del nivel del atributo de velocidad de Cannonman (**Level**). Esta suma exponencial se obtiene elevando el valor 1.07 a la potencia del nivel del atributo velocidad.
-    -Además, se agrega un incremento lineal de 0.5 por cada nivel del atributo de velocidad.
-El resultado de esta operación matemática proporciona la velocidad máxima a la que Cannonman puede ser lanzado. La velocidad mínima se establece como el **40%** de la velocidad máxima, asegurando un rango de velocidad adecuado para el jugador.
+**Lanzamiento desde el cañón:**
+- Regla: Al iniciar cada partida, el jugador lanza a Cannonman desde un cañón con velocidad inicial indeterminada.
+- Funcionamiento: Para determinar la velocidad a la que sale despedido el jugador, éste deberá realizar una prueba de habilidad en el que deberá pulsar la tecla espaciadora en el momento de mayor potencia del cañon. La forma en la que se calcula la velocidad máxima con la que podrá salir despedido el jugador es gracias al atributo de `Velocidad` del jugador y al nivel que éste tenga. 
+El cálculo de la velocidad máxima proviene de la siguiente función matemática: `Base + Mathf.Pow(1.07f, Level) + (0.5f * Level)` Dónde:
+    - La velocidad base (`Base`) es un valor constante.
+    - La velocidad máxima se determina mediante una suma exponencial que depende del nivel del atributo de velocidad de Cannonman (`Level`). Esta suma exponencial se obtiene elevando el valor 1.07 a la potencia del nivel del atributo velocidad.
+    - Además, se agrega un incremento lineal de 0.5 por cada nivel del atributo de velocidad.
+
+El resultado de esta operación matemática proporciona la velocidad máxima a la que Cannonman puede ser lanzado. La velocidad mínima se establece como el `40%` de la velocidad máxima, asegurando un rango de velocidad adecuado para el jugador.
 
 ### Flujo de Juego
 
