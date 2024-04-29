@@ -192,10 +192,10 @@ El rebote vertical hacia arriba que recibirá el jugador será porporcional al *
 
 
 ### Flujo de Juego
-A continuación el grafo del menú principal del juego:
+A continuación el grafo del menú principal del juego:  
 ![Grafo del menu principal del vieojuego](./resources/graph/menu_game.png)
 
-Por otro lado este sería el flow graph de la interfaz del juego:
+Por otro lado este sería el flow graph de la interfaz del juego:  
 ![Flow graph interfaz del juego](./resources/graph/game_acctions.png)
 
 ### Fin de Juego
