@@ -192,8 +192,11 @@ El rebote vertical hacia arriba que recibirá el jugador será porporcional al *
 
 
 ### Flujo de Juego
+A continuación el grafo del menú principal del juego:
+![Grafo del menu principal del vieojuego](./resources/graph/menu_game.png)
 
-> *Describe la secuencia del juego durante la partida, en una ejecución normal. Se debe escribir en orden de secuencia, desde el inicio hasta el final de la partida. Debería ser por medio de un diagrama de flujo*
+Por otro lado este sería el flow graph de la interfaz del juego:
+![Flow graph interfaz del juego](./resources/graph/game_acctions.png)
 
 ### Fin de Juego
 
