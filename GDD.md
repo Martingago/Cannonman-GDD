@@ -296,6 +296,7 @@ Apariencia: Su apariencia es bastante peculiar y digna de llamar la atención. C
 Comportamiento: Cannonman una vez ha sido despedido de su cañon presenta 2 comportamientos o estados.
 - Estado normal: Es su estado natural en forma de bola que le permite protegerse sus órganos vitales en caso de impacto contra una superficie o enemigo.
 - Estado de impacto vertical: Es su estado alternativo tras realizar su habilidad de `Golpeo`, en este estado Cannonman se impulsa verticalmente contra el suelo o contra lo que encuentre por su camino.  
+
 Habilidades: como tal **Cannonman** presenta una única **habilidad activable** que es el efecto de `golpeo` o **impulso vertical**. Aunque si presenta otros atributos como son `Velocidad`, `Deslizamiento` o `Aerodinámica` que interactúa en cómo el personaje es afectado por las físicas y entorno del mundo.
 
 | CANNONMAN en su estado normal | CANNONMAN en su estado de impulso vertical |
