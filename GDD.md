@@ -223,7 +223,7 @@ Finalmente, el `impulso vertical` es otra característica física del juego. Con
 
 ### Controles
 
-> *Describe cuáles serán los controles a usar dentro del juego, tanto durante la partida como en el manejo de menú. Es recomendable utilizar una tabla y/o imágenes para indicar los botones a usar y sus funciones. En caso de haber más de un tipo de control, explícalos por separado*
+En el siguiente apartado se van a explicar a detalle los controles necesarios para poder jugar a Cannonman:
 
 #### Menú principal y otros menús
 ![Imagen del menú principal del videojuego Cannonman: Endless-Run](./resources/ingame/game_main_menu.png)
@@ -258,13 +258,30 @@ La tienda de mejoras está permanentemente disponible en la parte superior izqui
 
 Hasta la versión 1.0, la única forma de interactuar con la tienda de mejoras es a través del ratón, sin existir ninguna alternativa para personas con discapacidades.
 
-
-
 ## MUNDO DEL JUEGO
 
 ### Descripción General
 
-> *Describe la apariencia básica y la sensación general del mundo en el que se desarrolla el juego. Añade cualquier información relevante con el fin de identificar la situación del jugador en el entorno*
+El mundo en el que se encuentra el jugador estaría ambientado en el planeta Tierra, con algunos aspectos fantásticos. El estilo del terreno es cartoon 2D con mucho colorido y que llama la atención. Todos los terrenos tienen la misma característica común y es que se conforman por 5 capas, ordenadas de mayor a menor profundidad:
+1. Cielo o fondo
+2. Nubes en el cielo
+3. Montañas lejanas
+4. Montañas cercanas
+5. Otros elementos visuales cercanos  no interactuables (árboles, cáctus, etc).
+Estas capas tienen un efecto `parallax` para dar mayor dinamismo y movimiento al terreno de juego.  
+Atendiendo a la distancia recorrida por el jugador, el *bioma* en el que se encuentra irá cambiando. Estos son los `Biomas` actuales existentes en el juego ordenados por orden de aparición:
+
+#### Bosque:
+![Imagen del bioma de bosque del juego de Cannonman: Endless-run](./resources/terrains/terrain_forest.png)
+
+#### Campo nevado
+![Imagen del bioma de campo nevado del juego de Cannonman: Endless-run](./resources/terrains/terrain_snow.png)
+
+#### Desierto árido
+![Imagen del bioma de desierto árido del juego de Cannonman: Endless-run](./resources/terrains/terrain_desert.png)
+
+#### Cementerio osucro 
+![Imagen del bioma de cementerio oscuro del juego de Cannonman: Endless-run](./resources/terrains/terrain_graveyard.png)
 
 ### Personajes
 
