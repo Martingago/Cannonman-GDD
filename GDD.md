@@ -385,7 +385,7 @@ Es la capacidad maxima que tiene el cañon de impulsar al jugador. La velocidad 
 
 #### Golpeo
 
-Es la habilidad que permite al jugador realizar un impulso vertical contra el suelo. El cálculo de esta habilidad depende en parte de la **velocidad** del jugador. Esta habilidad se encuentra disponible en la tienda de mejoras.
+Es la habilidad que permite al jugador realizar un impulso vertical contra el suelo. El cálculo de esta habilidad depende en parte de la **velocidad** del jugador. Esta habilidad se encuentra disponible en la tienda de mejoras.  
 ![imagen de la habilidad que permite la mejora del golpeo del jugador](./resources/shop/fuerza_vertical.png)
 
 #### Deslizamiento
@@ -395,18 +395,70 @@ Esta habilidad controla la capacidad del jugador de deslizarse por el terreno de
 
 #### Aerodinámica
 
-Esta es la habilidad más cara de todas. Es la encargada de aplicar un efecto de ralentización sobre el jugador en base a su velocidad actual. En el **nivel 80** la aerodinámica es neutra, es decir, no afectará negativamente a la velocidad del jugador. A partir del **nivel 81** se volverá positiva, haciendo que el jugador acelere con el paso del tiempo. `A Adrian Newey le interesa esto.`
+Esta es la habilidad más cara de todas. Es la encargada de aplicar un efecto de ralentización sobre el jugador en base a su velocidad actual. En el **nivel 80** la aerodinámica es neutra, es decir, no afectará negativamente a la velocidad del jugador. A partir del **nivel 81** se volverá positiva, haciendo que el jugador acelere con el paso del tiempo. `A Adrian Newey le interesa esto.`  
 ![imagen de la habilidad que permite la mejora de la aerodinámica del jugador](./resources/shop/aerodinamica.png)
 
 ### Flujo de Pantallas
 
 > *Describe todas las pantallas del juego. Explica su apariencia general, los elementos de cada pantalla y la interconexión entre ellas. Es recomendable indicar primero la interacción de las pantallas usando un diagrama de flujo*
 
+Las pantallas existentes en el videojuego Cannoman son únicamente el `menú principal` y la `pantalla de juego`.
+
+#### Menú principal
+Es la primera impresión que recibe el jugador al iniciar el videojuego. Presenta un fondo azul, el título del juego, las imágenes de los elementos más representativos del juego (El cañon y el personaje principal o Cannoman). Los elementos interactuables de este menú principal son 3 botones de acción que permiten al usuario:
+1. Iniciar partida
+2. Acceder a un pequeño tutorial informativo
+3. Salir del juego
+![Imagen menu principal de juego de Cannonman: Endless-run](./resources/ingame/game_main_menu.png)
+
+Al pulsar sobre el tutorial se muestra un pequeño panel con un texto explicativo con las características generales del juego.  
+Por otro lado, al pulsar en "Jugar" se abrirá la escena del gameplay, es decir, la **pantalla de juego**.
+
+#### Pantalla de juego
+Es la escena en la que se desarrolla la acción del videojuego. En ella se sitúan los enemigos, elementos interactuables y el personaje principal. Tamibén se encuentra el entorno o biomas, los cuales van cambiando a medida que el jugador avanza. Ojo, aunque la escena vaya cambiando es SIEMPRE la MISMA PANTALLA.  
+La forma en la que la pantalla de juego se ha creado, es similar a un teatro; El escenario es siempre el mismo, lo único que cambia son los adornos de fondo. Aquí ocurre algo similar, todos los biomas se crean bajo esta misma pantalla, pero se aplican cambios en los "adornos" cada vez que ocurre algún evento. En este caso el evento es alcanzar cierta distancia recorrida.  
+En esta pantalla de juego están visibales a mayores que los elementos citados con anterioridad la interfaz de usuario. En la interfaz es visible:
+- Barra de pontencia del cañon y su respectivo incicador de ayuda que muestra al usuario que botón pulsar.
+- Menu de tienda de mejoras y puntos disponibles para gastar.
+- Barra de progreso y de puntuación conseguida.
+- Datos en tiempo real (Velocidad del jugador, altura, distancia recorrida).
+- Indicador de estado del jugador (Si está bajo el efecto de impulso vertical o no) que le indica si tiene su habilidad disponible.
+- Botón de acceso al menú de pausa o ajustes.
+
+![Imagen general de la pantalla de juego de Cannonman: Endless-run](./resources/ingame/general_game_view.png)
+
 ### HUD
 
-> *Describe el HUD del juego durante el desarrollo de la partida. Todos los elementos que se muestran en ella deben ser indicados, incluyendo una descripción de su propósito. Es preferible incluir además una imagen con la composición gráfica conceptual de sus elementos*
+Los elementos del HUD son vitales en nuestro videojuego para darle información en tiempo real de la situación actual del jugador. Tanto para informar de su progreso en partida, como para ver sus puntos disponibles para gastar en la tienda.  
+El **HUD** del videojuego se compone principalmente por:
 
-> **HUD**: *acrónimo del término inglés Heads-Up Display (Presentación de Información). Conjunto de iconos, números, mapas, etc. que durante el juego nos dan información sobre el estado de nuestra partida y/o nuestro personaje, como por ejemplo vida restante, ubicación, munición, objetos en uso, etc.*
+**Estadisticas en tiempo real**  
+Se situan debajo de la tienda de mejoras en el lateral izquierdo del videojuego. El propósito de este elemento es mostrar al jugador información en tiempo real de la situación del jugador. En este elemento se muestran los siguientes datos:  
+1. Distancia total recorrida en la run
+2. Altura del personaje
+3. Velocidad del personaje.
+Estos datos son vitales para el jugador y le proporcionan la información sufiente que le ayudarán en la toma de decisiones.  
+![Imagen del HUD de información en tiempo real](./resources/ingame/game_realtime_stats.png)  
+
+**Barra de potencia**  
+Se Situa en la parte inferior izquierda de la pantalla. Este elemento se encarga de mostrar al jugador una barra de potencia indicativa de la fuerza con la que saldrá despedido el jugador. A mayores, esta interfaz cuenta con un elemento de ayuda que indica al jugador en todo momento la tecla asignada que debe pulsar para poder realizar la acción. Esta ayuda especial desaparecerá una vez la acción haya sido completada.  
+![Imagen del HUD de barra de potencia](./resources/ingame/game_power_bar.png)  
+
+**Barra de progreso**
+Ubicada en el centro de la parte superior la barra de progreso es el claro indicativo que indica al jugador que está avanzando en el mapa y cómo de cerca está del próximo destino. En la barra de progreso se indica con un punto la ubicación del jugador con respecto a un "total". También en la barra de progeso se indican los **puntos totales** es decir, la cantidad de puntaje total obtenida por el jugador en la run actual. La barra de progreso es vital para evitar la frustración y darle feedback al usuario de su avance en la partida.  
+![Imagen de la barra de progreso del jugador](./resources/ingame/game_progress_bar.png)
+
+**Estado del jugador**
+Se encuentra a la derecha de la barra de progreso. Este HUD únicamente se activa en la run. Muestra información al jugador del estado del personaje, indicandole si tiene disponible el impulso vertical o no. Este indicador muestra el sprite del jugador en su estado actual. Cuando la habilidad está disponible se activa una ayuda que le indicará al usuario que puede pulsar **flecha hacia abajo** o **DownArrow** para activarla.  
+![Imagen de la barra de estado del jugador](./resources/ingame/game_impulso_vertical.png)
+
+**Puntos disponibles**
+Situado debajo de los botones de la tienda mejoras; Esta interfaz se actualiza en tiempo real e indica al jugador el saldo de puntos que tiene disponible para gastar en la tienda.  
+![Imagen de los puntos disponibles del jugador en la tienda de mejoras](./resources/ingame/available_points.png)
+
+**Nivel y coste de las habilidades**
+Se encuentra  integrado en los propios botones de la tienda de mejoras. Estos elementos ayudan a indicarle al jugador en qué nivel se encuentra cada una de sus habilidades. También se indica el coste que supone mejorar dicha habilidad.  
+![Imagen de los costes y niveles de mejora](./resources/ingame/cost_and_level_habilities.png)
 
 ## ARTE
 
