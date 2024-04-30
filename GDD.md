@@ -299,8 +299,8 @@ Comportamiento: Cannonman una vez ha sido despedido de su cañon presenta 2 comp
 
 Habilidades: como tal **Cannonman** presenta una única **habilidad activable** que es el efecto de `golpeo` o **impulso vertical**. Aunque si presenta otros atributos como son `Velocidad`, `Deslizamiento` o `Aerodinámica` que interactúa en cómo el personaje es afectado por las físicas y entorno del mundo.
 
-| CANNONMAN en su estado normal | CANNONMAN en su estado de impulso vertical |
-|-------------------------------|--------------------------------------------|
+|      CANNONMAN en su estado normal         | CANNONMAN en su estado de impulso vertical |
+|--------------------------------------------|--------------------------------------------|
 | ![Imagen de CANNONMAN en su estado normal](./resources/entities/Cannonman/cannonman_normal_sprite.png) | ![Imagen de CANNONMAN en su estado de impulso vertical](./resources/entities/Cannonman/cannonman_impulso_vertical_sprite.png) |
 
 
