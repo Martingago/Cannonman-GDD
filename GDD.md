@@ -200,11 +200,27 @@ Por otro lado este sería el flow graph de la interfaz del juego:
 
 ### Fin de Juego
 
-> *Explica, por medio de una lista, todas las maneras en las que puede concluir la partida. El orden debe ser el siguiente: primero las derrotas, luego las victorias y, al final, cualquier otra situación. En cada una de ellas, se debe describir lo que sucede en caso de que ocurra esa situación. Siempre debe haber una manera de dar fin al juego*
+#### Derrota
+1. Velocidad del jugador alcanza 0 km/h: La partida llega a su fin cuando la velocidad del jugador se reduce a 0 km/h. Esto puede ocurrir debido a varias situaciones, como golpear un obstáculo, chocar contra el suelo o detenerse por completo debido a la desaceleración. En cualquier caso, una vez que la velocidad del jugador llega a 0, se considera una derrota.
+#### Salir del juego
+2. Decisión del jugador de salir del juego: Otra forma de finalizar la partida es cuando el jugador decide salir del juego o reiniciar la partida. Esta acción se considera una derrota, aunque no haya sido causada por una situación dentro del juego en sí, sino por la decisión del jugador de poner fin a la sesión de juego.
 
 ### Física de Juego
 
-> *Explica la física del juego. Es decir, describe sobre qué elementos se aplica y cómo funciona la física que se ejerce en el universo del juego*
+
+La física en el juego se centra únicamente en el personaje principal, que es lanzado desde el cañón y controlado por el jugador. Los elementos adicionales como enemigos, cañones o aliados modifican la física del personaje principal, pero no tienen física propia.
+
+**Jugador Principal**: Su física se gestiona mediante las herramientas proporcionadas por Unity a los desarrolladores. El objeto que representa al jugador contiene un componente `Rigidbody2D`, que define su masa y la gravedad a la que está sujeto.  
+Además, el jugador cuenta con un `BoxCollider2D` para manejar las interacciones físicas con elementos como el terreno. Este collider tiene un material asociado que establece las siguientes propiedades:
+    1. **Friction**: Controla el deslizamiento del jugador contra otros elementos colisionables, como el terreno. Inicialmente establecido en **4**, este atributo puede modificarse a medida que avanza el juego mediante la habilidad de `Deslizamiento` del jugador, alcanzando un máximo de **0**.  
+    2. **Bounciness**: Define la capacidad de rebote del jugador contra otros elementos colisionables. Su valor es constante en 0.2. 
+
+Por otro lado, en el entorno del juego se implementa una física de ralentización, o `aerodinámica`, que afecta la velocidad del jugador en el eje X. Este cálculo se realiza dentro del propio jugador en **función de su velocidad**. [Ver detalles](####Aerodinámica)
+Finalmente, el `impulso vertical` es otra característica física del juego. Consiste en una **anulación de la velocidad en el eje Y** del jugador, combinada con una **fuerza de impulso vertical** aplicada sobre su cuerpo. [Ver detalles](####Impulso_vertical/Golpeo)
+
+**Suelo**: Funciona como un elemento colisionable estándar para el jugador, sin tener físicas especiales. 
+
+**Enemigos y aliados**: Aunque no poseen físicas propias, interactúan con la física del jugador. Tanto los aliados como los enemigos están equipados con un `BoxCollider2D` que actúa como un detector de colisiones, constantemente atento a la presencia del jugador. Cada interacción del jugador con estos elementos altera su física. Los enemigos reducen la velocidad horizontal del jugador según unos valores predefinidos, mientras que las colchonetas aumentan tanto la velocidad horizontal como la vertical ascendente del jugador al colisionar con ellas.
 
 ### Controles
 
