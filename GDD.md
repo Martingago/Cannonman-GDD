@@ -319,8 +319,6 @@ Dentro del universo de CANNONMAN: Endles-Run existen 3 tipos de personajes: `Per
 ![Imagen del cañon que lanza por los aires a nuetro personaje principal: Cannonman](./resources/entities/interactuables/Cannon_default_sprite.png)
 
 
-
-
 **Cama elástica**: Es el otro elemento con el que puede interactuar el jugador. Las camas elásticas serán tu mayor aliado para aumentar tu velocidad y altura. Siempre que veas una intenta golpearla bajo el efecto de `Golpeo`, !Lograrás un mayor impulso!
 
 **Apariencia**: Un trasto viejo que parece sacado de un circo. Tiene forma circular, se sostiene sobre unas endebles patas de aluminio y tiene unos muelles que cuando saltas sobre ellos emiten un molesto ruido. No tiene pinta de que sea muy seguro, eso parece hacerlo incluso más divertido!
@@ -328,13 +326,24 @@ Dentro del universo de CANNONMAN: Endles-Run existen 3 tipos de personajes: `Per
 **Comportamiento**: Cada vez que el personaje principal actúa con las camas elásticas éstas le daran un buff de velocidad y de altura. Dentro de este comportamiento principal existen 2 posibilidades de actuación:
 1. Rebote normal: Es el rebote que recibe el jugador tras golpear la cama elástica bajo un efecto normal.  
 2. Rebote con impulso: Es un rebote con mayor intensidad. Para lograr este efecto el jugador debe golpear la colchoneta bajo el efecto de `golpeo`.  
+
 Pulsa [Ver más detalles](#aliados) para ver cómo se calculan estos valores con mayor detalle.
 
 **Habilidades**: Impulsar al jugador aliado de forma vertical y dándole un aumento de velocidad horizontal.
 
 ![Imagen del trampolin que ayuda al personaje Cannoman a salir disparado por los aires](./resources/entities/interactuables/trampolin_default_sprite.png)
 
+#### Enemigos
 
+**Roca pequeña**: Es un elemento fijo del mapa, golpearte contra ella te provocará una penalización en tu velocidad de movimiento.
+
+**Apariencia**: Diminuta, de color gris, y tan dura como una... ¿Roca? La roca tiene unos ojos apagados y cara de aburrida; Es normal, no debe ser muy divertido estar todo el día en el mismo sitio.
+
+**Comportamiento**: La roca pequeña no tiene ningún tipo de comportamiento especial. Se mantiene estática en su área de aparición. A la espera de que algún pobre desalmado la golpee.
+
+**Habilidades**: La habilidad principal que tiene la roca es la de entorpecer el paso al jugador. Si al jugador se le ocurre colisionar con una roca éste recibirá una penalización en su movimiento. Puedes ver con más detalle el cálculo de la penalización haciendo [Click aquí](#enemigos)
+
+![imagen de la roca pequeña que bloquea al personaje en Cannonman: Endless-run](./resources/entities/enemies/little_rock_enemy.png)
 
 ### Objetos
 
