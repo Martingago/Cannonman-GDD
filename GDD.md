@@ -207,7 +207,6 @@ Por otro lado este sería el flow graph de la interfaz del juego:
 
 ### Física de Juego
 
-
 La física en el juego se centra únicamente en el personaje principal, que es lanzado desde el cañón y controlado por el jugador. Los elementos adicionales como enemigos, cañones o aliados modifican la física del personaje principal, pero no tienen física propia.
 
 **Jugador Principal**: Su física se gestiona mediante las herramientas proporcionadas por Unity a los desarrolladores. El objeto que representa al jugador contiene un componente `Rigidbody2D`, que define su masa y la gravedad a la que está sujeto.  
@@ -215,8 +214,8 @@ Además, el jugador cuenta con un `BoxCollider2D` para manejar las interacciones
     1. **Friction**: Controla el deslizamiento del jugador contra otros elementos colisionables, como el terreno. Inicialmente establecido en **4**, este atributo puede modificarse a medida que avanza el juego mediante la habilidad de `Deslizamiento` del jugador, alcanzando un máximo de **0**.  
     2. **Bounciness**: Define la capacidad de rebote del jugador contra otros elementos colisionables. Su valor es constante en 0.2. 
 
-Por otro lado, en el entorno del juego se implementa una física de ralentización, o `aerodinámica`, que afecta la velocidad del jugador en el eje X. Este cálculo se realiza dentro del propio jugador en **función de su velocidad**. [Ver detalles](####Aerodinámica)
-Finalmente, el `impulso vertical` es otra característica física del juego. Consiste en una **anulación de la velocidad en el eje Y** del jugador, combinada con una **fuerza de impulso vertical** aplicada sobre su cuerpo. [Ver detalles](####Impulso_vertical/Golpeo)
+Por otro lado, en el entorno del juego se implementa una física de ralentización, o `aerodinámica`, que afecta la velocidad del jugador en el eje X. Este cálculo se realiza dentro del propio jugador en **función de su velocidad**. [Ver detalles](#aerodinámica)  
+Finalmente, el `impulso vertical` es otra característica física del juego. Consiste en una **anulación de la velocidad en el eje Y** del jugador, combinada con una **fuerza de impulso vertical** aplicada sobre su cuerpo. [Ver detalles](#impulso-verticalgolpeo)  
 
 **Suelo**: Funciona como un elemento colisionable estándar para el jugador, sin tener físicas especiales. 
 
@@ -225,6 +224,15 @@ Finalmente, el `impulso vertical` es otra característica física del juego. Con
 ### Controles
 
 > *Describe cuáles serán los controles a usar dentro del juego, tanto durante la partida como en el manejo de menú. Es recomendable utilizar una tabla y/o imágenes para indicar los botones a usar y sus funciones. En caso de haber más de un tipo de control, explícalos por separado*
+
+#### Menú principal y otro menús
+![Imagen del menú principal del videojuego Cannonman: Endless-Run](./resources/ingame/game_main_menu.png)
+
+Tanto en el menú principal como en otros menús, como por ejemplo el de **escape** o **game over**, los controles existentes en la versión 1.0 son exclusivamente de ratón. El uso del ratón permite al usuario navegar y hacer clic en los diferentes botones de acción, como `Jugar`, `Tutorial` y `Salir` en el menú principal, y `Continuar`, `Reiniciar` o `Salir` en el menú de escape. Hasta la fecha actual, no existen ayudas para personas con discapacidades. Este es un aspecto importante a considerar para una futura versión oficial del videojuego.
+
+![Imagen del menu de escape del videojuego de Cannonman: Endless-run](./resources/ingame/game_escape_menu.png)
+
+
 
 ## MUNDO DEL JUEGO
 
