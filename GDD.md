@@ -365,6 +365,7 @@ Pulsa [Ver más detalles](#aliados) para ver cómo se calculan estos valores con
 ![imagen de rinoceronte enemigo que bloquea al personaje en Cannonman: Endless-run](./resources/entities/enemies/rino_enemy.png)
 
 **Abeja**: bzzzzzzzzzzzzzz bzzzzzzzzzzzzzzzzz, la abeja vuela de arriba a abajo en lo que parece ser un baile típico de esta especie. Espero no ser alérgio a este tipo de animal...
+
 **Apariencia**: Con sus colores amarillo y negro y sus diminutas alas que realizan un esfuerzo titanico por mantenerla en el aire, la abeja es el único animal volador al que se debe de enfrertar Cannonman. La abeja cuenta con unos ojos rojos que nos hacen indicar que es mejor no acercarse a ella.
 
 **Comportamiento**: El comportamiento que presentan las abejas es un movimiento vertical de arriba a abajo, esto hace que resulte dificil de esquivar en el aire.
@@ -375,7 +376,28 @@ Pulsa [Ver más detalles](#aliados) para ver cómo se calculan estos valores con
 
 ### Objetos
 
-> *Describe cada uno de los objetos que existen dentro del juego y pueden ser utilizados por el jugador. Escribe su nombre y su rINTERFAZ
+Actualmente en Cannonman, no existen objetos dentro del juego. Lo más próximo a estos objetos son las habilidades del personaje que mejoran nuestras estadísticas y capacidades. Las diferentes habilidades se indicarán a continuación, y se encuentran disponibles dentro de la tienda de mejoras.
+
+#### Velocidad
+
+Es la capacidad maxima que tiene el cañon de impulsar al jugador. La velocidad mínima es el 40% de la velocidad máxima. Se encuentra disponible en la tienda de mejoras.  
+![imagen de la habilidad que permite la mejora de la velocidad del jugador](./resources/shop/velocidad.png)
+
+#### Golpeo
+
+Es la habilidad que permite al jugador realizar un impulso vertical contra el suelo. El cálculo de esta habilidad depende en parte de la **velocidad** del jugador. Esta habilidad se encuentra disponible en la tienda de mejoras.
+![imagen de la habilidad que permite la mejora del golpeo del jugador](./resources/shop/fuerza_vertical.png)
+
+#### Deslizamiento
+
+Esta habilidad controla la capacidad del jugador de deslizarse por el terreno de juego sin perder velocidad. Esta habilidad tiene como máximo el **nivel 100**. Se encuentra disponible en la tienda de mejoras.  
+![imagen de la habilidad que permite la mejora del deslizamiento del jugador](./resources/shop/deslizamiento.png)
+
+#### Aerodinámica
+
+Esta es la habilidad más cara de todas. Es la encargada de aplicar un efecto de ralentización sobre el jugador en base a su velocidad actual. En el **nivel 80** la aerodinámica es neutra, es decir, no afectará negativamente a la velocidad del jugador. A partir del **nivel 81** se volverá positiva, haciendo que el jugador acelere con el paso del tiempo. `A Adrian Newey le interesa esto.`
+![imagen de la habilidad que permite la mejora de la aerodinámica del jugador](./resources/shop/aerodinamica.png)
+
 ### Flujo de Pantallas
 
 > *Describe todas las pantallas del juego. Explica su apariencia general, los elementos de cada pantalla y la interconexión entre ellas. Es recomendable indicar primero la interacción de las pantallas usando un diagrama de flujo*
