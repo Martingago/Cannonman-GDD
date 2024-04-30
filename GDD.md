@@ -286,8 +286,6 @@ Atendiendo a la distancia recorrida por el jugador, el *bioma* en el que se encu
 
 ### Personajes
 
-> *Describe cada uno de los personajes que forman parte del juego. Indicar su nombre, apariencia, comportamiento y habilidades en caso de que las tenga. Sepáralos en 3 grupos, dependiendo de la existencia de ellos en el juego: Jugables, Secundarios y Enemigos. Es necesario incluir una imagen de cada personaje junto a su descripción*
-
 Dentro del universo de CANNONMAN: Endles-Run existen 3 tipos de personajes: `Personaje principal` `Personajes interactuables` y `Enemigos`. A continuación se muestra una ficha técnica de cada uno de ellos y de sus habilidades.
 
 #### Jugables
@@ -344,6 +342,36 @@ Pulsa [Ver más detalles](#aliados) para ver cómo se calculan estos valores con
 **Habilidades**: La habilidad principal que tiene la roca es la de entorpecer el paso al jugador. Si al jugador se le ocurre colisionar con una roca éste recibirá una penalización en su movimiento. Puedes ver con más detalle el cálculo de la penalización haciendo [Click aquí](#enemigos)
 
 ![imagen de la roca pequeña que bloquea al personaje en Cannonman: Endless-run](./resources/entities/enemies/little_rock_enemy.png)
+
+
+**Roca**: Es un elemento fijo en el mapa, golpearte contra ella provocará en el jugador una penalización en la velocidad de movimiento. Es peor que una roca pequeña, esta roca causa mayor efecto en la ralentización del usuario, aparte de ser de mayor tamaño, con lo que la vuelve más dificil de esquivar.
+
+**Apariencia**: Mantiene la misma apariencia que una roca pequeña, gris, cara de aburrida e incluso más dura que una roca normal. A diferencia de una roca pequeña esta tiene un tamaño considerablemente mayor.
+
+**Comportamiento**: Al igual que la roca pequeña, esta roca no tiene ningún comportamiento especial. Se mantiene inmovil en el terreno a la espera de que un jugador despistado choque contra ella. 
+
+**Habilidades**: La habilidad de este tipo de roca es entorpecer el paso del jugador. La penalización a aplicar sobre el jugador será considerablemente mayor a la que ocasiona la roca pequeña. Puedes ver en más detalle la penalizacón haciendo [Click aquí](#enemigos).
+
+![imagen de la roca grande que bloquea al personaje en Cannonman: Endless-run](./resources/entities/enemies/big_rock_enemy.png)
+
+**Rinoceronte**: Furioso, rápido e inamovible, el rinoceronte supone la mayor amenaza para el jugador en lo que al suelo se refiere. Los rinocerontes son animales muy territoriales, y este no es menos. El rinoceronte estará patruyando su territorio de izquierda a derecha, lo mejor es que nadie se cruce en su camino.
+
+**Apariencia**: Fuerte, grande, rápido y... ¿Rojo? Por si acaso quedaban dudas si éste podría ser un aliado nuestro su color rojo no nos indica lo mismo. 
+
+**Comportamiento**: Este ser terreste presenta un comportamiento que puede llegar incluso a ser impredecible. El rinoceronte realizará un "patrullaje" de izquierda a derecha sobre su área de aparición. Esto hace que sea dificil de esquivar por un jugador que viene realizando un **golepo** contra el suelo.
+
+**Habilidades**: Este tembible animal al golpear al jugador le ocasionará una ralentización crítica en su velocidad de movimiento. El rinoceronte es el animal terreste con mayor penalización de velocidad de movimiento para Cannonman. Puedes consultar sus estadísticas de ralentización haciendo [click aquí](#enemigos).
+
+![imagen de rinoceronte enemigo que bloquea al personaje en Cannonman: Endless-run](./resources/entities/enemies/rino_enemy.png)
+
+**Abeja**: bzzzzzzzzzzzzzz bzzzzzzzzzzzzzzzzz, la abeja vuela de arriba a abajo en lo que parece ser un baile típico de esta especie. Espero no ser alérgio a este tipo de animal...
+**Apariencia**: Con sus colores amarillo y negro y sus diminutas alas que realizan un esfuerzo titanico por mantenerla en el aire, la abeja es el único animal volador al que se debe de enfrertar Cannonman. La abeja cuenta con unos ojos rojos que nos hacen indicar que es mejor no acercarse a ella.
+
+**Comportamiento**: El comportamiento que presentan las abejas es un movimiento vertical de arriba a abajo, esto hace que resulte dificil de esquivar en el aire.
+
+**Habilidades**: La habilidad que presenta la abeja es similar a la de los enemigos anteriores, molestar e impedir el paso del personaje principal. El hecho de tocar a la abeja ocasionará en el jugador una penalización en el movimiento. Puedes consultar las estadísticas específicas de este animal ostil haciendo [click aquí](#enemigos).
+
+![imagen de la abeja enemiga que bloquea al personaje en Cannonman: Endless-run](./resources/entities/enemies/bee_enemy.png)
 
 ### Objetos
 
