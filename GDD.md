@@ -288,20 +288,51 @@ Atendiendo a la distancia recorrida por el jugador, el *bioma* en el que se encu
 
 > *Describe cada uno de los personajes que forman parte del juego. Indicar su nombre, apariencia, comportamiento y habilidades en caso de que las tenga. Sepáralos en 3 grupos, dependiendo de la existencia de ellos en el juego: Jugables, Secundarios y Enemigos. Es necesario incluir una imagen de cada personaje junto a su descripción*
 
-Dentro del universo de CANNONMAN: Endles-Run existen 3 tipos de personajes: `Personaje principal` `Personaje interactuable` y `Enemigos`. A continuación se muestra una ficha técnica de cada uno de ellos y de sus habilidades.
+Dentro del universo de CANNONMAN: Endles-Run existen 3 tipos de personajes: `Personaje principal` `Personajes interactuables` y `Enemigos`. A continuación se muestra una ficha técnica de cada uno de ellos y de sus habilidades.
 
 #### Jugables
-CANNONMAN: Es el personaje principal que maneja el jugador y sobre el que gira el desarrollo del juego.  
-Apariencia: Su apariencia es bastante peculiar y digna de llamar la atención. Cannonman viste con un duro casco blanco con 2 líneas rojas que parece protegerle de todos los impactos que éste debe sufrir tras cada lanzamiento que realiza. En cuando a su cuerpo, viste un ceñido mono blanco con 1 linea roja que atraviesa las mangas de sus brazos. Los zapatos son de un gris claro que combina con su impoluto traje blanco.
-Comportamiento: Cannonman una vez ha sido despedido de su cañon presenta 2 comportamientos o estados.
+**CANNONMAN**: Es el personaje principal que maneja el jugador y sobre el que gira el desarrollo del juego.  
+
+**Apariencia**: Su apariencia es bastante peculiar y digna de llamar la atención. Cannonman viste con un duro casco blanco con 2 líneas rojas que parece protegerle de todos los impactos que éste debe sufrir tras cada lanzamiento que realiza. En cuando a su cuerpo, viste un ceñido mono blanco con 1 linea roja que atraviesa las mangas de sus brazos. Los zapatos son de un gris claro que combina con su impoluto traje blanco.
+
+**Comportamiento**: Cannonman una vez ha sido despedido de su cañon presenta 2 comportamientos o estados.
 - Estado normal: Es su estado natural en forma de bola que le permite protegerse sus órganos vitales en caso de impacto contra una superficie o enemigo.
 - Estado de impacto vertical: Es su estado alternativo tras realizar su habilidad de `Golpeo`, en este estado Cannonman se impulsa verticalmente contra el suelo o contra lo que encuentre por su camino.  
 
-Habilidades: como tal **Cannonman** presenta una única **habilidad activable** que es el efecto de `golpeo` o **impulso vertical**. Aunque si presenta otros atributos como son `Velocidad`, `Deslizamiento` o `Aerodinámica` que interactúa en cómo el personaje es afectado por las físicas y entorno del mundo.
+**Habilidades**: como tal **Cannonman** presenta una única **habilidad activable** que es el efecto de `golpeo` o **impulso vertical**. Aunque si presenta otros atributos como son `Velocidad`, `Deslizamiento` o `Aerodinámica` que interactúa en cómo el personaje es afectado por las físicas y entorno del mundo.
 
 |      CANNONMAN en su estado normal         | CANNONMAN en su estado de impulso vertical |
 |--------------------------------------------|--------------------------------------------|
 | ![Imagen de CANNONMAN en su estado normal](./resources/entities/Cannonman/cannonman_normal_sprite.png) | ![Imagen de CANNONMAN en su estado de impulso vertical](./resources/entities/Cannonman/cannonman_impulso_vertical_sprite.png) |
+
+
+#### Interactuables
+
+**Cañon**: Es el personaje con el que interactúa el personaje principal. (LLamarse Cannonman y no ir acompañado de un cañon sería algo peculiar)
+
+**Apariencia**: Robusto, grande, potente, ruidoso y poco seguro; Esas son los adjetivos con los que definiría el cañoon. Me pregunto si eso cumplirá con todos los controles de seguridad...
+
+**Comportamiento**: El personaje principal se encuentra dentro del cañon. Es necesaria la habilidad del jugador para hacer que Cannonman salga despedido en el momento de mayor potencia. El cañon presenta una barra de carga que varia sus valores desde un mínimo a un máximo a una gran velocidad. El jugador deberá pulsar la tecla de acción (**Barra espaciadora**) para hacer que el cañon dispare a nuestro heroico personaje principal por las tierras de nuestro mundo. La potencia maxima y mínima con la que el cañon disparará al personaje viene dado por el atributo de `Velocidad` con el que cuenta Cannonman.
+
+**Habilidades**: su principal habilidad es la de lanzar a nuestro afable jugador por los aires. Vaya, no me gustaría estar en su lugar.
+
+![Imagen del cañon que lanza por los aires a nuetro personaje principal: Cannonman](./resources/entities/interactuables/Cannon_default_sprite.png)
+
+
+
+
+**Cama elástica**: Es el otro elemento con el que puede interactuar el jugador. Las camas elásticas serán tu mayor aliado para aumentar tu velocidad y altura. Siempre que veas una intenta golpearla bajo el efecto de `Golpeo`, !Lograrás un mayor impulso!
+
+**Apariencia**: Un trasto viejo que parece sacado de un circo. Tiene forma circular, se sostiene sobre unas endebles patas de aluminio y tiene unos muelles que cuando saltas sobre ellos emiten un molesto ruido. No tiene pinta de que sea muy seguro, eso parece hacerlo incluso más divertido!
+
+**Comportamiento**: Cada vez que el personaje principal actúa con las camas elásticas éstas le daran un buff de velocidad y de altura. Dentro de este comportamiento principal existen 2 posibilidades de actuación:
+1. Rebote normal: Es el rebote que recibe el jugador tras golpear la cama elástica bajo un efecto normal.  
+2. Rebote con impulso: Es un rebote con mayor intensidad. Para lograr este efecto el jugador debe golpear la colchoneta bajo el efecto de `golpeo`.  
+Pulsa [Ver más detalles](#aliados) para ver cómo se calculan estos valores con mayor detalle.
+
+**Habilidades**: Impulsar al jugador aliado de forma vertical y dándole un aumento de velocidad horizontal.
+
+![Imagen del trampolin que ayuda al personaje Cannoman a salir disparado por los aires](./resources/entities/interactuables/trampolin_default_sprite.png)
 
 
 
