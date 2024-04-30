@@ -281,12 +281,28 @@ Atendiendo a la distancia recorrida por el jugador, el *bioma* en el que se encu
 #### Desierto árido
 ![Imagen del bioma de desierto árido del juego de Cannonman: Endless-run](./resources/terrains/terrain_desert.png)
 
-#### Cementerio osucro 
+#### Cementerio oscuro 
 ![Imagen del bioma de cementerio oscuro del juego de Cannonman: Endless-run](./resources/terrains/terrain_graveyard.png)
 
 ### Personajes
 
 > *Describe cada uno de los personajes que forman parte del juego. Indicar su nombre, apariencia, comportamiento y habilidades en caso de que las tenga. Sepáralos en 3 grupos, dependiendo de la existencia de ellos en el juego: Jugables, Secundarios y Enemigos. Es necesario incluir una imagen de cada personaje junto a su descripción*
+
+Dentro del universo de CANNONMAN: Endles-Run existen 3 tipos de personajes: `Personaje principal` `Personaje interactuable` y `Enemigos`. A continuación se muestra una ficha técnica de cada uno de ellos y de sus habilidades.
+
+#### Jugables
+CANNONMAN: Es el personaje principal que maneja el jugador y sobre el que gira el desarrollo del juego.  
+Apariencia: Su apariencia es bastante peculiar y digna de llamar la atención. Cannonman viste con un duro casco blanco con 2 líneas rojas que parece protegerle de todos los impactos que éste debe sufrir tras cada lanzamiento que realiza. En cuando a su cuerpo, viste un ceñido mono blanco con 1 linea roja que atraviesa las mangas de sus brazos. Los zapatos son de un gris claro que combina con su impoluto traje blanco.
+Comportamiento: Cannonman una vez ha sido despedido de su cañon presenta 2 comportamientos o estados.
+- Estado normal: Es su estado natural en forma de bola que le permite protegerse sus órganos vitales en caso de impacto contra una superficie o enemigo.
+- Estado de impacto vertical: Es su estado alternativo tras realizar su habilidad de `Golpeo`, en este estado Cannonman se impulsa verticalmente contra el suelo o contra lo que encuentre por su camino.  
+Habilidades: como tal **Cannonman** presenta una única **habilidad activable** que es el efecto de `golpeo` o **impulso vertical**. Aunque si presenta otros atributos como son `Velocidad`, `Deslizamiento` o `Aerodinámica` que interactúa en cómo el personaje es afectado por las físicas y entorno del mundo.
+
+| CANNONMAN en su estado normal | CANNONMAN en su estado de impulso vertical |
+|-------------------------------|--------------------------------------------|
+| ![Imagen de CANNONMAN en su estado normal](./resources/entities/Cannonman/cannonman_normal_sprite.png) | ![Imagen de CANNONMAN en su estado de impulso vertical](./resources/entities/Cannonman/cannonman_impulso_vertical_sprite.png) |
+
+
 
 ### Objetos
 
