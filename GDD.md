@@ -400,8 +400,6 @@ Esta es la habilidad más cara de todas. Es la encargada de aplicar un efecto de
 
 ### Flujo de Pantallas
 
-> *Describe todas las pantallas del juego. Explica su apariencia general, los elementos de cada pantalla y la interconexión entre ellas. Es recomendable indicar primero la interacción de las pantallas usando un diagrama de flujo*
-
 Las pantallas existentes en el videojuego Cannoman son únicamente el `menú principal` y la `pantalla de juego`.
 
 #### Menú principal
@@ -450,7 +448,11 @@ Ubicada en el centro de la parte superior la barra de progreso es el claro indic
 
 **Estado del jugador**
 Se encuentra a la derecha de la barra de progreso. Este HUD únicamente se activa en la run. Muestra información al jugador del estado del personaje, indicandole si tiene disponible el impulso vertical o no. Este indicador muestra el sprite del jugador en su estado actual. Cuando la habilidad está disponible se activa una ayuda que le indicará al usuario que puede pulsar **flecha hacia abajo** o **DownArrow** para activarla.  
-![Imagen de la barra de estado del jugador](./resources/ingame/game_impulso_vertical.png)
+
+|      Estado jugador normal        | Estado jugador efecto impulso vertical |
+|--------------------------------------------|--------------------------------------------|
+| ![Imagen de la barra de estado del jugador](./resources/ingame/game_impulso_vertical.png) | ![Imagen de la barra de estado del jugador activada](./resources/ingame/game_impulso_vertical_active.png) |
+
 
 **Puntos disponibles**
 Situado debajo de los botones de la tienda mejoras; Esta interfaz se actualiza en tiempo real e indica al jugador el saldo de puntos que tiene disponible para gastar en la tienda.  
