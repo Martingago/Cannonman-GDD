@@ -225,12 +225,38 @@ Finalmente, el `impulso vertical` es otra característica física del juego. Con
 
 > *Describe cuáles serán los controles a usar dentro del juego, tanto durante la partida como en el manejo de menú. Es recomendable utilizar una tabla y/o imágenes para indicar los botones a usar y sus funciones. En caso de haber más de un tipo de control, explícalos por separado*
 
-#### Menú principal y otro menús
+#### Menú principal y otros menús
 ![Imagen del menú principal del videojuego Cannonman: Endless-Run](./resources/ingame/game_main_menu.png)
 
 Tanto en el menú principal como en otros menús, como por ejemplo el de **escape** o **game over**, los controles existentes en la versión 1.0 son exclusivamente de ratón. El uso del ratón permite al usuario navegar y hacer clic en los diferentes botones de acción, como `Jugar`, `Tutorial` y `Salir` en el menú principal, y `Continuar`, `Reiniciar` o `Salir` en el menú de escape. Hasta la fecha actual, no existen ayudas para personas con discapacidades. Este es un aspecto importante a considerar para una futura versión oficial del videojuego.
 
 ![Imagen del menu de escape del videojuego de Cannonman: Endless-run](./resources/ingame/game_escape_menu.png)
+
+#### Controles del gameplay.
+
+**Abrir el menú de escape/pausa:**  
+Para abrir el menú de escape o pausa, hay dos opciones disponibles. Una de ellas es hacer clic con el ratón en el botón correspondiente ubicado en la interfaz, en la parte superior derecha de la pantalla del juego. Para cerrar el menú de pausa, se puede seleccionar cualquiera de las opciones disponibles dentro del propio menú.
+
+![Imagen del botón de pausa/escape del juego Cannonman: Endless-run](./resources/ingame/game_boton_pausa.png)
+
+La otra alternativa es pulsar la tecla `"ESC"` para abrir el menú de pausa, y pulsar nuevamente `"ESC"` para cerrar el menú.
+
+**Lanzar el personaje:**  
+Para lanzar el personaje desde el cañón, el jugador debe pulsar la tecla `barra espaciadora` en el momento de mayor potencia. En la interfaz del videojuego aparecerá una barra de carga con valores cambiantes que se fijará en el momento en el que el jugador presione la tecla indicada. Además, hay una animación de ayuda a la derecha indicando la acción que debe realizar.
+
+![Imagen de la interfaz de lanzamiento de jugador en el juego de Cannonman: Endless-run](./resources/ingame/game_power_bar.png)
+
+**Impulso vertical:**  
+Esta habilidad se activa con la tecla `flecha hacia abajo` o `DownArrow`. Una interfaz visual no interactiva a modo de ayuda indica si se puede o no pulsar la habilidad de **golpeo**. Se encuentra en la parte superior derecha de la pantalla de juego.
+
+![Imagen de la interfaz de impulso vertical del jugador en el juego de Cannonman: Endless-run](./resources/ingame/game_impulso_vertical.png)
+
+**Comprar en la tienda de mejoras:**  
+La tienda de mejoras está permanentemente disponible en la parte superior izquierda de la interfaz de juego. Consta de 4 botones que se pueden clicar. Para interactuar con ellos, se necesita el uso del `ratón`. Si el jugador no tiene suficientes puntos, los botones estarán inhabilitados y no realizarán ninguna acción al hacer clic sobre ellos.
+
+![Imagen de la tienda de mejoras en el videojuego Cannonman: Endless-run](./resources/ingame/game_shop.png)
+
+Hasta la versión 1.0, la única forma de interactuar con la tienda de mejoras es a través del ratón, sin existir ninguna alternativa para personas con discapacidades.
 
 
 
