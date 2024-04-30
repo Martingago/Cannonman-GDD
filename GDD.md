@@ -267,7 +267,8 @@ El mundo en el que se encuentra el jugador estaría ambientado en el planeta Tie
 2. Nubes en el cielo
 3. Montañas lejanas
 4. Montañas cercanas
-5. Otros elementos visuales cercanos  no interactuables (árboles, cáctus, etc).
+5. Otros elementos visuales cercanos  no interactuables (árboles, cáctus, etc).  
+
 Estas capas tienen un efecto `parallax` para dar mayor dinamismo y movimiento al terreno de juego.  
 Atendiendo a la distancia recorrida por el jugador, el *bioma* en el que se encuentra irá cambiando. Estos son los `Biomas` actuales existentes en el juego ordenados por orden de aparición:
 
