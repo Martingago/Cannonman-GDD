@@ -545,8 +545,6 @@ En el diseño sonoro del juego, se opta por una perspectiva que brinde al jugado
 
 ### Assets de Audio
 
-> *Indica, en forma de lista ordenada, todos los audios incluidos en el juego. Se debe agrupar los assets en dos grupos, Música y Sonidos. En el grupo Sonidos, internamente se debe agrupar en base al contenido en el cual es usado. Por ejemplo, un personaje puede contener sonidos de salto, golpe, muerte, etc*
-
 #### Música  
 1. Música del menú principal
 2. Música de la escena principal del juego
@@ -563,8 +561,29 @@ En este aspecto si existe mayor variedad de sonidos para hacer frente a las posi
 
 ### Plataformas Objetivo
 
-> *Indica las plataformas en las cuales sería publicado el juego. También se debe agregar cualquier especificación técnica que deba tener la plataforma para la normal ejecución del videojuego*
+La principal plataforma en las cuales se valora inicialmente la publicación del videojuego sería:
+ **Ordenador**: Dentro de los ordenadores de sobremesa o portátiles existen 2 plataformas objetivo en las que publicar el videojuego:
+ 1. **Navegador web**: Una de las ideas a valorar sería la de permitir el acceso al juego a través de navegador web. Con esto se consigue atraer a un público casual que quiera pasar tiempos muertos desde cualquier dispositivo o ordenador.
+ El juego debe ser compatible con los principales navegadores web como Google Chrome, Mozilla Firefox, Microsoft Edge, etc. Se debe garantizar un rendimiento adecuado y una experiencia fluida en estos navegadores.
+ 2. **Steam**: Es la plataforma de videojuegos por excelencia. Lo que se pretende aquí es ya atraer a un público mas familiarizado con los videojuegos. El juego debe cumplir con los requisitos de publicación de Steam, incluyendo la compatibilidad con Windows y la implementación de características específicas de la plataforma como logros, integración con la comunidad y la tienda de Steam.
+
+ **movil**: Se tratará de captar la atención en dispositivos móviles. Para ello se publicará el juego en las siguientes plataformas:
+ 1. PlayStore: El juego debe ser compatible con dispositivos Android y cumplir con los requisitos de la Play Store en términos de rendimiento, tamaño de archivo, y políticas de contenido y monetización.
+ 2. AppleStore: El juego debe ser compatible con dispositivos iOS y cumplir con los requisitos de la App Store en términos de rendimiento, diseño, seguridad y políticas de contenido y monetización.
 
 ### Herramientas de Desarrollo
 
-> *Indica todas las herramientas de desarrollo utilizadas para la creación del juego. Incluye el motor del juego y sus complementos, los programas usados en el arte y la música y cualquier otro programa usado durante su desarrollo*
+#### Motor del Juego:
+- **UNITY**: Se utilizó como el motor principal de desarrollo para la creación del juego. UNITY proporcionó las herramientas necesarias para la creación, programación y visualización del juego en diferentes plataformas.  
+
+#### Programación:
+- **Visual Studio Code**: Se empleó como el entorno de desarrollo integrado (IDE) para la creación de scripts y programación de la lógica del juego. Visual Studio Code proporcionó funcionalidades avanzadas de edición y depuración para el desarrollo de código en C#.  
+
+#### Diseño de Arte:
+- **Figma**: Se utilizó para la elaboración de la interfaz de usuario, diseño de niveles y creación de otros elementos visuales del juego. Figma ofreció herramientas de diseño colaborativo y permitió la creación de diseños vectoriales y de píxeles.
+- **UNITY Assets Store**: Se recurrió a la tienda de activos de UNITY para obtener recursos visuales como sprites de personajes, enemigos, terrenos y otros elementos del juego.
+
+#### Sonido:
+- **Herramientas de Recorte en Línea**: Se utilizaron diversas herramientas en línea para recortar y ajustar los sonidos obtenidos de fuentes en línea. Estos sonidos se emplearon como placeholders durante el desarrollo del juego y serán reemplazados por sonidos originales y libres de derechos en la versión final del juego.
+    - [Conversor de vídeos de Youtube a MP3](https://utomp3.com/es)
+    - [Herramienta para recortar audio en línea](https://mp3cut.net/es/)
