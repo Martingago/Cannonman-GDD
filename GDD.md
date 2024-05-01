@@ -4,12 +4,14 @@
 
 Creado por: Martín Gago Chorén
 
+![Imagen de portada para el DGG creado por Martín Gago](./resources/document/main_cannonman_title.png)
 Versión del documento: 1.0
 
 ## HISTORIAL DE REVISIONES
 
-| Versión | Fecha      | Comentarios |
-| 1.0     | 28/04/2024 | Creación y redacción del GDD  |
+| Versión |    Fecha   |          Comentarios          |
+|---------|------------|-------------------------------|
+|   1.0   | 28/04/2024 | Creación y redacción del GDD  |
 
 ## RESUMEN
 
@@ -442,11 +444,11 @@ Estos datos son vitales para el jugador y le proporcionan la información sufien
 Se Situa en la parte inferior izquierda de la pantalla. Este elemento se encarga de mostrar al jugador una barra de potencia indicativa de la fuerza con la que saldrá despedido el jugador. A mayores, esta interfaz cuenta con un elemento de ayuda que indica al jugador en todo momento la tecla asignada que debe pulsar para poder realizar la acción. Esta ayuda especial desaparecerá una vez la acción haya sido completada.  
 ![Imagen del HUD de barra de potencia](./resources/ingame/game_power_bar.png)  
 
-**Barra de progreso**
+**Barra de progreso**  
 Ubicada en el centro de la parte superior la barra de progreso es el claro indicativo que indica al jugador que está avanzando en el mapa y cómo de cerca está del próximo destino. En la barra de progreso se indica con un punto la ubicación del jugador con respecto a un "total". También en la barra de progeso se indican los **puntos totales** es decir, la cantidad de puntaje total obtenida por el jugador en la run actual. La barra de progreso es vital para evitar la frustración y darle feedback al usuario de su avance en la partida.  
 ![Imagen de la barra de progreso del jugador](./resources/ingame/game_progress_bar.png)
 
-**Estado del jugador**
+**Estado del jugador**  
 Se encuentra a la derecha de la barra de progreso. Este HUD únicamente se activa en la run. Muestra información al jugador del estado del personaje, indicandole si tiene disponible el impulso vertical o no. Este indicador muestra el sprite del jugador en su estado actual. Cuando la habilidad está disponible se activa una ayuda que le indicará al usuario que puede pulsar **flecha hacia abajo** o **DownArrow** para activarla.  
 
 |      Estado jugador normal        | Estado jugador efecto impulso vertical |
@@ -454,11 +456,11 @@ Se encuentra a la derecha de la barra de progreso. Este HUD únicamente se activ
 | ![Imagen de la barra de estado del jugador](./resources/ingame/game_impulso_vertical.png) | ![Imagen de la barra de estado del jugador activada](./resources/ingame/game_impulso_vertical_active.png) |
 
 
-**Puntos disponibles**
+**Puntos disponibles**  
 Situado debajo de los botones de la tienda mejoras; Esta interfaz se actualiza en tiempo real e indica al jugador el saldo de puntos que tiene disponible para gastar en la tienda.  
 ![Imagen de los puntos disponibles del jugador en la tienda de mejoras](./resources/ingame/available_points.png)
 
-**Nivel y coste de las habilidades**
+**Nivel y coste de las habilidades**  
 Se encuentra  integrado en los propios botones de la tienda de mejoras. Estos elementos ayudan a indicarle al jugador en qué nivel se encuentra cada una de sus habilidades. También se indica el coste que supone mejorar dicha habilidad.  
 ![Imagen de los costes y niveles de mejora](./resources/ingame/cost_and_level_habilities.png)
 
