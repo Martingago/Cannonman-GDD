@@ -462,6 +462,10 @@ Situado debajo de los botones de la tienda mejoras; Esta interfaz se actualiza e
 Se encuentra  integrado en los propios botones de la tienda de mejoras. Estos elementos ayudan a indicarle al jugador en qué nivel se encuentra cada una de sus habilidades. También se indica el coste que supone mejorar dicha habilidad.  
 ![Imagen de los costes y niveles de mejora](./resources/ingame/cost_and_level_habilities.png)
 
+A modo de visión global, estos los TODOS los elementos del HUD disponibles en el juego:  
+![Imagen elementos de HUD del videojuego](./resources/ingame/UI.png)
+
+
 ## ARTE
 
 ### Metas de Arte
@@ -523,11 +527,37 @@ El trampolin es otro asset que debido a la falta de tiempo únicamente presenta 
 
 ### Metas de Audio
 
-> *Explica el enfoque musical y sonoro del juego. Indica el objetivo general del audio dentro del juego y cómo se piensa alcanzarlo. También se debe describir, por separado, el concepto general de la música y los efectos de sonido del juego, incluyendo el silencio, en caso de haber un uso intencional de él*
+El enfoque musical y sonoro del juego se centra en crear un ambiente tranquilo y relajado que se ajuste a la situación del juego, donde el personaje principal sobrevuela paisajes fantásticos durante períodos prolongados. El objetivo general del audio es proporcionar una experiencia auditiva que complemente la jugabilidad y la atmósfera del juego.  
+
+#### Música:  
+Se busca una música tranquila, sosegada y sencilla.
+Debe ser lo suficientemente suave y poco intrusiva para poder escucharse durante largos períodos de tiempo sin llegar a ser molesta.  
+Se ha tomado como referencia la música de Minecraft, ya que refleja el ambiente tranquilo y relajado que se desea para el juego.  
+#### Efectos de sonido:
+Los efectos de sonido se utilizarán para realzar la experiencia del juego y mejorar la inmersión del jugador.
+Los efectos de sonido al interactuar con elementos del juego, como el sonido del cañón al dispararse, los golpes contra obstáculos o el impulso vertical del jugador, ayudarán a proporcionar retroalimentación al jugador y mejorar la sensación de control.
+#### Silencio:
+No se contempla el uso del silencio en el gameplay del videojuego, ya que no se pretenden realzar momentos de tensión o de superación entre niveles ya que ese no es el punto de la música.  
+
+En el diseño sonoro del juego, se opta por una perspectiva que brinde al jugador la libertad de elegir su propia banda sonora. La música de fondo se caracteriza por ser tranquila y relajada, acorde con la atmósfera de los paisajes que el jugador sobrevuela durante su aventura. Además, los efectos de sonido se mantienen sutiles y no intrusivos, permitiendo que el jugador los silencie si así lo prefiere. En lugar de utilizar el silencio para crear momentos de tensión o dramatismo, se da prioridad a la experiencia personalizada del jugador, quien puede disfrutar del juego con su propia selección musical sin que los efectos de sonido interfieran en su experiencia de juego.
+
+
 
 ### Assets de Audio
 
 > *Indica, en forma de lista ordenada, todos los audios incluidos en el juego. Se debe agrupar los assets en dos grupos, Música y Sonidos. En el grupo Sonidos, internamente se debe agrupar en base al contenido en el cual es usado. Por ejemplo, un personaje puede contener sonidos de salto, golpe, muerte, etc*
+
+#### Música  
+1. Música del menú principal
+2. Música de la escena principal del juego
+
+#### Sonidos  
+En este aspecto si existe mayor variedad de sonidos para hacer frente a las posibles situaciones que pueda vivir el jugador. Se disponen de assets de sonidos para las siguientes situaciones:  
+- **Clicks en botones y otros elementos interactuables**: Se reproduce un sonido cada vez que el jugador interactúa con un botón o elemento interactuable en el juego.
+- **Sonido de lanzamiento del cañón**: Se emite un estruendoso sonido cada vez que el jugador es lanzado desde el cañón. El objetivo es proporcionar inmersión al jugador en las acciones que realiza.
+- **Golpeo contra enemigos**: Al golpear a un enemigo, se reproduce un sonido característico de dolor. Este sonido ayuda al jugador a entender lo que está sucediendo en medio del caos de las altas velocidades.
+- **Golpeo contra el suelo**: Cuando el jugador activa el impulso vertical y choca contra el suelo, se reproduce este sonido para indicar al jugador lo sucedido.
+- **Rebote con la colchoneta**: Este efecto de sonido brinda al jugador retroalimentación sobre lo que está ocurriendo en la pantalla.
 
 ## DETALLES TÉCNICOS
 
