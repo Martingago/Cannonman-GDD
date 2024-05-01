@@ -2,7 +2,7 @@
 ![Imagen de portada para el DGG creado por Martín Gago](./resources/document/main_cannonman_title.png)
 ## GAME DESIGN DOCUMENT
 
-Creado por: Martín Gago Chorén
+Creado por: Martín Gago Chorén  
 Versión del documento: 1.0
 
 ## HISTORIAL DE REVISIONES
