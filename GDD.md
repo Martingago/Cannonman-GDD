@@ -1,10 +1,8 @@
 # CANNONMAN: ENDLESS-RUN
-
+![Imagen de portada para el DGG creado por Martín Gago](./resources/document/main_cannonman_title.png)
 ## GAME DESIGN DOCUMENT
 
 Creado por: Martín Gago Chorén
-
-![Imagen de portada para el DGG creado por Martín Gago](./resources/document/main_cannonman_title.png)
 Versión del documento: 1.0
 
 ## HISTORIAL DE REVISIONES
@@ -468,11 +466,58 @@ Se encuentra  integrado en los propios botones de la tienda de mejoras. Estos el
 
 ### Metas de Arte
 
-> *Explica los objetivos que se quieren lograr en el arte del juego. Describe, de manera general, el estilo de arte aplicado además de indicar el concepto visual que se desea lograr en los elementos. Explica, por separado, el significado de la apariencia general de escenarios y personajes*
+El arte del juego se enfoca en lograr un estilo único y colorido que se asocie instantáneamente con la identidad del juego. Se ha optado por un estilo de arte cartoon en 2D, el cual se caracteriza por su simplicidad y colores vibrantes. Este estilo no requiere de detalles excesivos, lo que lo hace ideal para un juego en constante movimiento como este.
+
+En cuanto a los escenarios, se busca crear entornos dinámicos y llamativos que mantengan la atención del jugador sin distraerlo demasiado del gameplay. Los escenarios tienen un diseño caricaturesco y alegre, con elementos reconocibles pero estilizados para adaptarse al universo del juego. Se prioriza la claridad visual y la facilidad de reconocer obstáculos y elementos interactivos.
+
+Por otro lado, en cuanto a los personajes, se busca transmitir personalidad y expresividad a través de diseños simples pero efectivos. Los personajes tienen un aspecto caricaturesco y divertido, con rasgos distintivos que los hacen fácilmente reconocibles. Se busca que la apariencia de los personajes refleje su comportamiento y habilidades en el juego, manteniendo la coherencia con el estilo visual general.
 
 ### Assets de Arte
 
-> *Indica, en forma de lista ordenada, todas las imágenes y animaciones incluidas en el juego. Agrupa los assets por contenido relacionado. Por ejemplo, un personaje puede contener animaciones de salto, reposo, ataque, etc*
+A momento actual no se disponen de las animaciones en todos los elementos del videojuego. Pese a ello, en el siguiente apartado se mostrarán los assets y animaciones incluidas en el juego:
+
+#### Jugador
+Estados:
+|      Reposo       | Impulso vertical |
+|-------------------|------------------|
+| ![Imagen de la barra de estado del jugador](./resources/entities/Cannonman/cannonman_normal_sprite.png) | ![Imagen de la barra de estado del jugador activada](./resources/entities/Cannonman/cannonman_impulso_vertical_sprite.png) |
+Fluidez entre estados:  
+- No hay animación entre los dos estados debido a limitaciones de tiempo y recursos.
+- A pesar de esto, la transición entre estados se logra de manera fluida gracias a la naturaleza del juego.
+
+#### Enemigos
+
+**Roca pequeña y Roca normal**:  
+Las rocas presentan un constante esado de reposo ya que se mantienen inmóviles en el terreno de juego. Los assets de la **roca pequeña** y de la **roca normal** son los mismos, salvo que cambia la escala de los mismos. Esto se ha realizado para ahorrar tiempo de desarrollo.  
+
+|      Reposo       |    Animación   |
+|-------------------|----------------|
+| ![Imagen del assets de la roca](./resources/entities/enemies/big_rock_enemy.png) | ![Imagen del assets de la roca](./resources/entities/enemies/rock_enemy_animation.png) |
+
+**Rinoceronte**:  
+El rinoceronte presenta un estado constante de patrullaje en el que se mueve de lado a lado vigilando un área determinada. Para hacer este movimiento más fluido se le han establecido animaciones de movimiento, las cuales se encuentran en la siguiente tabla:  
+
+|      Reposo       |    Animación   |
+|-------------------|----------------|
+| ![Imagen del assets del rinoceronte](./resources/entities/enemies/rino_enemy.png) | ![Imagen del assets del rinoceronte](./resources/entities/enemies/rino_enemy_animation.png) |
+
+**Abeja**:  
+La abeja presenta tambien un estado constante de patrullaje, pero en este caso con un movimiento vertical de arriba a abajo. Esta acción de patrullaje tiene una animación por defecto que se muestra en la siguiente tabla:  
+
+|      Reposo       |    Animación   |
+|-------------------|----------------|
+| ![Imagen del assets de la abeja](./resources/entities/enemies/bee_enemy.png) | ![Imagen del assets de la abeja](./resources/entities/enemies/bee_enemy_animation.png) |
+
+#### Elementos interactivos
+
+**Cañon**:  
+El cañon debido a la falta de tiempo y de recuros únicamente presenta un asset por defecto, que es el de su estado normal. Como previsión a futuro se espera añadir una animación de lanzamiento para ofrecer una experiencia de calidad al usuario.
+![Imagen del asset del cañon](./resources/entities/interactuables/Cannon_default_sprite.png)
+
+**Trampolin**:  
+El trampolin es otro asset que debido a la falta de tiempo únicamente presenta un estado de reposo y no contiene animación de salto. Se prevee añadir animación de rebote cada vez que el jugador interactúe con él:
+![Imagen del asset del trampolin](./resources/entities/interactuables/trampolin_default_sprite.png)
+
 
 ## AUDIO
 
